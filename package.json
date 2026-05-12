@@ -1,6 +1,6 @@
 {
   "name": "@layers/amba-functions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The SDK Cloudflare Workers import to build amba functions. Provides defineFunction + a typed ctx (auth, collections, AI, events, storage, email, queue, fan-out, secrets).",
   "type": "module",
   "main": "./dist/index.js",
@@ -17,7 +17,7 @@
   },
   "files": ["dist", "README.md", "LICENSE"],
   "scripts": {
-    "build": "tsdown",
+    "build": "tsdown && tsc --emitDeclarationOnly",
     "dev": "tsdown --watch",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

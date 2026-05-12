@@ -16,7 +16,7 @@ import { defineConfig } from 'tsdown';
 export default defineConfig({
   entry: ['src/index.ts', 'src/errors.ts'],
   format: 'esm',
-  dts: true,
+  dts: false,
   hash: false,
   clean: true,
   sourcemap: false,
